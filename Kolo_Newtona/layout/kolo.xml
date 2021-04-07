@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/teczowetlo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/image_kolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/kolo1" />
+
+            <Button
+                android:id="@+id/button_startKola"
+                android:layout_width="110dp"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/mclaren"
+                android:text="START"
+                android:textSize="18sp"
+                app:backgroundTint="#202E77"
+                app:iconTint="#000000"
+                app:rippleColor="#131010"
+                app:strokeColor="#100B0B" />
+
+            <Button
+                android:id="@+id/button_szybciej"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="49dp"
+                android:layout_toEndOf="@+id/button_startKola"
+                android:fontFamily="@font/mclaren"
+                android:text="+"
+                android:textSize="24sp"
+                app:backgroundTint="#8C9EFF"
+                app:iconTint="#000000"
+                app:rippleColor="#131010"
+                app:strokeColor="#100B0B" />
+
+            <Button
+                android:id="@+id/button_wolniej"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="49dp"
+                android:layout_toStartOf="@+id/button_startKola"
+                android:fontFamily="@font/mclaren"
+                android:text="-"
+                android:textSize="24sp"
+                app:backgroundTint="#B388FF"
+                app:iconTint="#000000"
+                app:rippleColor="#131010"
+                app:strokeColor="#100B0B" />
+
+            <Button
+                android:id="@+id/button_wstecz"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/strzalka_prosto"
+                android:fontFamily="@font/bungee_shade"
+                android:gravity="center"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:background="@color/cardview_shadow_end_color"
+                android:dropDownSelector="@color/cardview_dark_background"
+                android:foreground="@drawable/ikona_kola"
+                android:popupBackground="@android:color/darker_gray"
+                android:scrollbarThumbHorizontal="@color/black"
+                android:scrollbarThumbVertical="@color/black" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
